@@ -1,9 +1,9 @@
 # MIDI2GB
 <br/>
-Python program which converts a MIDI file into a GBZ80 assembly file, and attempts to build and run it as a Game Boy ROM. <br/>
+Python program which converts a MIDI file into a GBZ80 assembly file, and attempts to build and run it as a Game Boy ROM, thus playing the song on the Game Boy's original soundfont. <br/>
 Tested with vasmz80_oldstyle v1.9d and BGB v1.5.8. Both will need to be downloaded separately. <br/>
 <br/>
-The script to run is MIDI2GB.py. It takes three arguments: the MIDI file to play, a number from 1 to 255 which control's the song's tempo, and a number from -6 to 2 which controls the pitch. <br/>
+The script to run is MIDI2GB.py. It takes three arguments: the MIDI file to play, a number from 1 to 255 which controls the song's tempo, and a number from -6 to 2 which controls the pitch. <br/>
 <br/>
 The Python program generates the required assembly instructions, then runs makegame.bat, which uses VASM (http://sun.hasenbraten.de/vasm/) to compile those instructions into a ROM. <br/>
 You can open this ROM in any Game Boy emulator, but by default, the script will automatically try and boot it in an instance of BGB (https://bgb.bircd.org/). If you're using another emulator, you'll need to change that line in the batch script. <br/>
